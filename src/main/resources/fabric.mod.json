@@ -1,0 +1,13 @@
+{
+	"schemaVersion": 1,
+	"id": "atlas_dumper",
+	"version": "${version}",
+	"name": "Atlas Dumper",
+	"environment": "client",
+	"mixins": [
+      "atlas_dumper.mixins.json"
+	],
+	"depends": {
+      "fabricloader": ">=0.14.21"
+	}
+}
