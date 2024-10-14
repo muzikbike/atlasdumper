@@ -15,7 +15,7 @@ public class TextureDumper {
 		GL11.glBindTexture(3553, glId);
 		GL11.glPixelStorei(GL11.GL_PACK_ALIGNMENT, 1);
 		GL11.glPixelStorei(GL11.GL_UNPACK_ALIGNMENT, 1);
-		for (int mip = 0; mip < Math.max(1, maxMipLevel); mip++) {
+		for (int mip = 0; mip <= Math.max(1, maxMipLevel); mip++) {
 			int stitchWidth = width >> mip;
 			int stitchHeight = height >> mip;
 			int capacity = stitchWidth * stitchHeight;
